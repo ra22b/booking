@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+/* تصميم الكرت */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* تصميم خاص للعناوين */
+h2 {
+    color: #037272;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* تصميم النصوص الخاصة */
+.w3-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* تصميم زر التحديث */
+.form-group input[type="submit"] {
+    background-color: #037272;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #025e5e;
+}
+
+/* تعديل خاص بأيام الأسبوع */
+.working-days {
+    display:grid; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.working-days label {
+    display: inline-block;
+}

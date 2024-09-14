@@ -1,0 +1,32 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #037272;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 1.8em;
+    color: #ffffff;
+}

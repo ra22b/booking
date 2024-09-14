@@ -1,0 +1,188 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap"); */
+
+.content_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 140px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 50px; 
+    margin-top: 40px;
+}
+
+.searchform {
+    width: 80%;
+
+}
+
+/* الصف العلوي: حقل البحث وزر البحث */
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchinput {
+    color: #037272;
+    font-size: large;
+    text-align: right;
+    padding: 15px;
+    border: 2.5px solid #037272;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.search-button {
+    padding: 15px 25px;
+    font-size: large;
+    border: 2.5px solid #037272;
+    background-color: #037272;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* الصف السفلي: القوائم المنسدلة */
+.filter {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.filter select {
+    padding: 15px;
+    text-align: right;
+    color: #037272;
+    font-size: large;
+    border: 2.5px solid #037272;
+    border-radius: 15px;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .content_main {
+        margin-top: 20px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .image img {
+        max-width: 300px; /* تقليل حجم الصورة */
+    }
+
+    .search {
+        width: 100%; 
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+}
+
+/* الهواتف المحمولة (شاشات أقل من 576px) */
+@media (max-width: 576px) {
+    .image img {
+        max-width: 100%;
+    }
+
+
+        
+    .search-button {
+        margin-left: 10px;
+        
+    }
+
+    .filter {
+        flex-direction: column; 
+    }
+}
+
+
+/**
+* PAGE 2
+* doctors cards
+*/
+
+.title_p2{
+    text-align:center; 
+    color:#037272;
+    font-size: 40PX;
+}
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around; /* توزيع الكروت بالتساوي */
+    gap: 20px;
+    /* background-color: rgb(249, 249, 249); */
+}
+
+.card {
+    color: #037272;
+    box-shadow: 0 4px 8px #037272;
+    max-width: 300px;
+    margin: 10px; /* مسافة بين الكروت */
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(50% - 50px); /* 3 كروت في كل صف */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px 0 #037272;
+    z-index: 0; 
+} 
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #037272;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1d8686cf;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: 037272;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #037272; /* يمكنك تغيير هذا اللون إلى أي لون تفضله */
+}

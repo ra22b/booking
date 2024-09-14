@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+:root {
+  --grey: #767676;
+  --yellow: #fcbf02;
+  --bgColor: #037272;
+  --light-blue: #edffff;
+  --sky-blue: #3c9090;
+  --dark-grey: #45494c;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  direction: rtl;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between; /* للتباعد بين العناصر */
+  align-items: flex-start; /* لضمان أن العناصر تبدأ من الأعلى */
+  gap: 20px; /* تباعد بين الكرت والفورم */
+}
+
+
+.hamburger {
+  display: none;
+} 
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 75px;
+  padding: 0px 10px;
+}
+
+nav ul div {
+  display: flex;
+}
+
+nav ul div li {
+  padding: 0 15px;
+  font-weight: 400;
+}
+
+nav ul div li a:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+nav ul div:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+.brand img {
+  width: 55px;
+  padding: 0 1px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logsign button {
+  border: solid;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+.logsign button:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.card img {
+  width: 16rem;
+}
+
+.doc {
+  width: 250px;
+  max-width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 5px;
+  gap: 1em;
+  box-shadow: 0px 2px 6px 0px rgba(31, 129, 103, 0.15);
+}
+
+.docinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* color: #037272; */
+  gap: 0.8em;
+}
+
+.docinfo span:not(:nth-child(1)) {
+  font-size: 1.2em;
+}
+
+.docinfo span:nth-child(1) {
+  max-width: 175px;
+}
+
+.doc img {
+  width: 130px;
+  border-radius: 100%;
+  border: 1px solid var(--grey);
+}
+
+.name {
+  font-size: 2em;
+}
+
+.docinfo {
+  padding: 1em;
+}
+
+.docInfo {
+  display: flex;
+  width: 25vw;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0.5em 0em;
+}
+
+.about {
+  width: 250px;
+  max-width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.about span {
+  font-size: 1.5em;
+}
+
+.about p {
+  font-size: 1em;
+  color: var(--grey);
+}
+
+.schedule {
+  width: 75vw;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.dates {
+  padding: 0.5em;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  gap: 2em;
+}
+
+.month span:nth-child(2) {
+  height: 50px;
+  color: var(--sky-blue);
+}
+
+.month img {
+  cursor: pointer;
+}
+
+.weekdays {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5em 1em;
+}
+
+.weekdays img {
+  cursor: pointer;
+}
+
+.weekdays > span:nth-child(2) div {
+  display: flex;
+  align-items: center;
+  gap: 1.24em;
+}
+
+.weekdays > span:nth-child(2) span {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border: 1px solid var(--bgColor);
+  background-color: white;
+  color: var(--bgColor);
+}
+
+.weekdays > span:nth-child(2) span:hover {
+  border: 1px solid var(--sky-blue);
+  background-color: var(--sky-blue);
+  color: white;
+}
+
+.swiper {
+  width: 665px;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.slots {
+  padding: 0em 1em;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25em;
+  color: var(--dark-grey);
+  border-bottom: 1px solid var(--grey);
+  padding: 0.5em 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5em;
+  color: var(--dark-grey);
+}
+
+.timings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3em;
+  padding: 1em 0;
+}
+
+.timings div {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  column-gap: 2em;
+}
+
+.timings a span {
+  display: block;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border: 1px solid var(--bgColor);
+  background-color: white;
+  color: var(--bgColor);
+}
+
+.timings span:hover {
+  border: 1px solid var(--sky-blue);
+  background-color: var(--sky-blue);
+  color: white;
+}
+
+.afternoon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input input[type="submit"] {
+  border: none;
+  text-align: center;
+  background-color: var(--bgColor);
+  color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  font-size: 1.25em;
+  margin-top: 5px;
+}
+
+input[type="date"] {
+  color: var(--bgColor);
+  font-family: "Figtree", sans-serif;
+  font-size: 2em;
+  border: none;
+  border: 2px solid var(--bgColor);
+  padding: 0.2em;
+  border-radius: 5px;
+}
+
+.custom-file-upload {
+  border: none;
+  outline: none;
+  background-color: var(--sky-blue);
+  color: white;
+  border: 1px solid var(--darkGrey);
+  padding: 16px 192px 16px 16px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.booked {
+  pointer-events: none;
+}
+
+.booked span {
+  border: 1px solid var(--grey) !important;
+  color: var(--grey) !important;
+}
+
+.datelabel {
+  font-family: "Figtree", sans-serif;
+  font-size: 2em;
+  padding-right: 2em;
+  color: var(--dark-grey);
+  padding-left: 10px;
+}
+
+.submit {
+  text-align: center;
+}
+
+.active {
+  background-color: var(--bgColor) !important;
+  color: white !important;
+}

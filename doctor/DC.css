@@ -1,0 +1,68 @@
+/* تعميم تنسيق للجسم */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* تصميم بطاقة الطبيب */
+.doctor-card {
+    display: flex;
+    flex-direction: column; /* ترتيب عمودي للعناصر */
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 60%; /* عرض الكرت 60% من الشاشة */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* تصميم صورة الطبيب */
+.doctor-card img {
+    width: 300px;  /* تكبير الصورة */
+    height: 300px; /* تكبير الصورة */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px; /* مسافة بين الصورة والمعلومات */
+    border: 5px solid #037272; /* حدود للصورة */
+}
+
+/* تصميم معلومات الطبيب */
+.doctor-info {
+    width: 100%;
+    text-align: center; /* جعل النص في المنتصف */
+    margin-bottom: 10px;
+    font-size: 18px; /* تكبير حجم الخط */
+}
+
+/* جعل الأزرار خضراء وتحويلها للأحمر عند النقر */
+form {
+    display: flex;
+    gap: 20px; /* مسافة بين الزرين */
+    justify-content: center; /* جعل الأزرار في المنتصف */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #037272;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* للتحكم في مدة التحول */
+    font-size: 16px; /* تكبير النص داخل الأزرار */
+}
+
+/* عند النقر، تتحول الأزرار إلى اللون الأحمر */
+button:active {
+    background-color:yellow;
+}
+
+/* تغير اللون عند التمرير بالماوس */
+button:hover {
+    background-color: #748188;
+}
+
